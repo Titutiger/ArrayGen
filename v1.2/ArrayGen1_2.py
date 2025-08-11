@@ -94,9 +94,6 @@ class Physics:
             plt.ylabel('Vertical distance (m)')
             plt.legend()
 
-            #plt.xlim(0, 100)
-            #plt.ylim(0, 100)
-
             if grid:
                 plt.grid(True)
                 plt.show()
@@ -139,7 +136,6 @@ class Physics:
 
             return vectors[..., 0], vectors[..., 1]
 
-        # Create plot
         fig, ax = plt.subplots(figsize=(7, 7))
         ax.set_xlim(-6, 6)
         ax.set_ylim(-6, 6)
@@ -174,29 +170,6 @@ class Physics:
         ax.set_title('Interactive Magnet Vector Field')
         plt.grid(True)
         plt.show()
-
-    '''
-    @staticmethod
-    def cross_product_magnitude(a: float, b: float, theta: float, n: Optional[Tuple[float, float, float]] = None):
-        """
-        Compute the cross product magnitude and optionally multiply by a unit vector n.
-
-        Args:
-            a (float): magnitude of vector a
-            b (float): magnitude of vector b
-            theta (float): angle between vectors a and b in radians
-            n (Optional[Tuple[float, float, float]]): unit vector direction of cross product (3D)
-
-        Returns:
-            float or Tuple[float, float, float]: cross product magnitude or vector
-        """
-        magnitude = a * b * math.sin(theta)
-        if n is None:
-            return magnitude  # just magnitude (scalar)
-        else:
-            vector_result = (magnitude * n[0], magnitude * n[1], magnitude * n[2])
-            return vector_result
-    '''
 
 # ----------------------------------------------------------------------------------------------------------------------
 
