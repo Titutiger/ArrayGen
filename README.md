@@ -23,9 +23,9 @@ ___
 `v1.3 implements new features like math and physics concepts.`
 
 `Things like projectile path, complex operations and more  will be added.`
-- [x] Ideas on what to add
-- [x] Implementation and practical math
-- [x] Developing / coding
+- [] Ideas on what to add
+- [] Implementation and practical math
+- [] Developing / coding
 - [ ] Testing, formatting and compatibility checking
 - [ ] Documentation (docstrings, repo, etc...)
 - [ ] Final thoughts (small tweaks)
