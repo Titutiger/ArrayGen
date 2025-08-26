@@ -18,7 +18,7 @@ ___
 # for a clearer sense of what this does.
 ```
 
-> Upcoming v1.3
+> Upcoming v1.3.x
 
 `v1.3 implements new features like math and physics concepts.`
 
