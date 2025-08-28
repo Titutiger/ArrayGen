@@ -19,11 +19,13 @@ ___
 ```
 
 > Upcoming v1.3.x
+###### Please note that from now on, only versions 1.x will be released and not 1.x.x.
+###### making the next release to be v1.4
 
-`v1.3 implements new features like math and physics concepts.`
+`v1.3.x is in development.`
+What you can expect: (It's a secret, and that too, a big one!!)
 
-`Things like projectile path, complex operations and more  will be added.`
-- [ ] Ideas on what to add
+- [x] Ideas on what to add
 - [ ] Implementation and practical math
 - [ ] Developing / coding
 - [ ] Testing, formatting and compatibility checking
