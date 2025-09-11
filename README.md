@@ -18,21 +18,23 @@ ___
 # for a clearer sense of what this does.
 ```
 
-> Upcoming v1.3.x
+> Upcoming v1.4
 ###### Please note that from now on, only versions 1.x will be released and not 1.x.x.
 ###### making the next release to be v1.4
 
-`v1.3.x is in development.`
+`v1.4 is in development.`
 What you can expect: (It's a secret, and that too, a big one!!)
 
 - [x] Ideas on what to add
-- [ ] Implementation and practical math
-- [ ] Developing / coding
+- [x] Implementation and practical math
+- [x] Developing / coding
 - [ ] Testing, formatting and compatibility checking
 - [ ] Documentation (docstrings, repo, etc...)
 - [ ] Final thoughts (small tweaks)
 - [ ]  Release!!!
-
+____
+What you can expect:
+- Chemistry!
 ___
 ## Purpose
 
