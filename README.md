@@ -4,13 +4,7 @@ Thanking you / you lot in advance!!
 ___
 # Overview
 
-1. The `Expression.eval_expr(...)` adds `var: int` which can be set as 1 or 2, indicating the number of variables.
-For a single variable experssion, the var is by default set to 1.
-If you want two variables, then: `Expression.eval_expr(... , var = 2)`
-
-2. The graphing system now has converged to only one function: `Graphing.plot(...)` for better usage.
-Herein, centered, static and speed are set to False, False and 50 respectively.
-For two var expressions, z is also required but by default is set to `None`.
+1. The `.expr()` function changed syntax, please refer to the `.ipynb file` for it's proper usage.
 ___
 ## Format
 ```python
@@ -18,23 +12,21 @@ ___
 # for a clearer sense of what this does.
 ```
 
-> Upcoming v1.4
+> Release v1.4
 ###### Please note that from now on, only versions 1.x will be released and not 1.x.x.
-###### making the next release to be v1.4
 
-`v1.4 is in development.`
 What you can expect: (It's a secret, and that too, a big one!!)
 
+Addition of `.Chem`! And changes to `.ipybb` interactivity using `inb_`!
+
+Development Status:
 - [x] Ideas on what to add
 - [x] Implementation and practical math
 - [x] Developing / coding
-- [ ] Testing, formatting and compatibility checking
-- [ ] Documentation (docstrings, repo, etc...)
-- [ ] Final thoughts (small tweaks)
-- [ ]  Release!!!
-____
-What you can expect:
-- Chemistry!
+- [x] Testing, formatting and compatibility checking
+- [x] Documentation (docstrings, repo, etc...)
+- [x] Final thoughts (small tweaks)
+- [x]  Release!!!
 ___
 ## Purpose
 
