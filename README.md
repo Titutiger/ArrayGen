@@ -12,21 +12,18 @@ ___
 # for a clearer sense of what this does.
 ```
 
-> Release v1.4
-###### Please note that from now on, only versions 1.x will be released and not 1.x.x.
+> Minor Release v1.5
 
-What you can expect: (It's a secret, and that too, a big one!!)
-
-Addition of `.Chem`! And changes to `.ipybb` interactivity using `inb_`!
+Addition of `.get_function()`!
 
 Development Status:
-- [x] Ideas on what to add
-- [x] Implementation and practical math
-- [x] Developing / coding
-- [x] Testing, formatting and compatibility checking
-- [x] Documentation (docstrings, repo, etc...)
-- [x] Final thoughts (small tweaks)
-- [x]  Release!!!
+- [] Ideas on what to add
+- [] Implementation and practical math
+- [] Developing / coding
+- [] Testing, formatting and compatibility checking
+- [] Documentation (docstrings, repo, etc...)
+- [] Final thoughts (small tweaks)
+- []  Release!!!
 ___
 ## Purpose
 
