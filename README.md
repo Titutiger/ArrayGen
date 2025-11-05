@@ -17,13 +17,13 @@ ___
 Addition of `.get_function()`!
 
 Development Status:
-- [] Ideas on what to add
-- [] Implementation and practical math
-- [] Developing / coding
-- [] Testing, formatting and compatibility checking
-- [] Documentation (docstrings, repo, etc...)
-- [] Final thoughts (small tweaks)
-- []  Release!!!
+- [ ] Ideas on what to add
+- [ ] Implementation and practical math
+- [ ] Developing / coding
+- [ ] Testing, formatting and compatibility checking
+- [ ] Documentation (docstrings, repo, etc...)
+- [ ] Final thoughts (small tweaks)
+- [ ]  Release!!!
 ___
 ## Purpose
 
