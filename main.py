@@ -4,7 +4,7 @@
 
 """
 
-For examples, please go to .docs/index.md
+For examples, please go to .docs/README.md
 
 """
 import os.path
