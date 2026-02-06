@@ -62,3 +62,6 @@ Finally launched ArrayGen v1.4 at 4pm IST.
 And now, at 9:38, I'm making changes to the cross and vector magnitude functions, as to make them more efficient.
 I might also make `.expr()` more interactive via `inb_`.
 ____
+
+#### $$ 6th February 2026: $$
+Integrated git the right way such that I can push and pull efficiently.
