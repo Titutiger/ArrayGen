@@ -9,6 +9,8 @@ In its bare bones, it creates a domain-range pair.
 ____
 > Currently requires numpy and matplotlib
 
+###### ! Do note that all functions are not documented. They will in due time.
+
 ## Modules:
 Firstly, let's have a look at all the modules:
 
