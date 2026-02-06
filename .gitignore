@@ -25,3 +25,4 @@ htmlcov/
 .idea/
 
 *.log
+/v1.4/
