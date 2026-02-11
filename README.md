@@ -193,3 +193,6 @@ The magnitude of side 2.
 - angle_A: float
 
 The angle of the triangle.
+
+## `.t`
+Syntax for teachers using ArrayGen.
