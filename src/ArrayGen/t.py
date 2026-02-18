@@ -1,14 +1,15 @@
-t.py
+#t.py
 
 import re
-import src.ArrayGen as q
+from typing import Optional, Any
+
+from maths import *
+from graphing import *
+from utils import expr, normalize
 
 def syn(expr: str):
 
-    def normalize(expr_: str) -> str:
-        expr_ = expr_.replace('^', '**')
-        expr_ = re.sub(r'(\d)([a-zA-Z])', r'\1*\2', expr_)
-        return expr_
+
 
     def parse_math_format(input_str: str):
         match = re.match(r'(f|plot)\((.*)\)', input_str.strip())
@@ -27,9 +28,9 @@ def syn(expr: str):
             number = content.split(":")[1].strip()
             return [number, '!']
 
-        content = content.strip("()")
-
+        content = match.group(2).strip()
         keywords = []
+
         parts = re.split(r'\bof\b|\bif\b|:', content)
 
         for part in parts:
@@ -37,42 +38,47 @@ def syn(expr: str):
             if not part:
                 continue
 
+            # unwrap only tuple-like variable groups, e.g. "(x,y)" -> "x,y"
+            if re.fullmatch(r'\(\s*[A-Za-z]\w*(\s*,\s*[A-Za-z]\w*)+\s*\)', part):
+                part = part[1:-1].strip()
+
             if re.search(r'[0-9a-zA-Z^]', part):
                 part = normalize(part)
 
             keywords.append(part)
 
+
         return keywords
 
+    def addressor(parsed_expr: list[str | Any], cmd: str):
+        # =========================
+        # DIAGRAM CASE
+        # =========================
+        if cmd == 'diag':
+            if len(parsed_expr) < 2:
+                print("No expression provided.")
+                return
+
+            x, y = expr(parsed_expr[1], vars_='x')
+            Graphing.plot(x, y, static=True)
+
+        # =========================
+        # FACTORIAL CASE
+        # =========================
+        elif cmd.isdigit():
+            if len(parsed_expr) > 1 and parsed_expr[1] == '!':
+                z = int(cmd)
+                print(Maths.factorial(z))
 
     parsed = parse_math_format(expr)
-
     if not parsed:
         print("Invalid syntax")
         return
-
     command = parsed[0]
 
-    # =========================
-    # DIAGRAM CASE
-    # =========================
-    if command == 'diag':
-        if len(parsed) < 2:
-            print("No expression provided.")
-            return
-
-        x, y = q.expr(parsed[1], vars_='x')
-        q.Graphing.plot(x, y, static=True)
-
-    # =========================
-    # FACTORIAL CASE
-    # =========================
-    elif command.isdigit():
-        if len(parsed) > 1 and parsed[1] == '!':
-            z = int(command)
-            print(q.Maths.factorial(z))
+    addressor(parsed, command)
 
 
 if __name__ == '__main__':
-    expr = 'f(diag of 3x^2+5x+4)'
+    expr = 'f((x,y) of 3x^2+5x+4)'
     syn(expr)
