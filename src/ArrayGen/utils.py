@@ -71,6 +71,24 @@ def get_unique_filename(outdir: Path, base: str = 'output', ext: str = 'gif') ->
             return fpath
         i += 1
 
+def normalize(expr_: str) -> str:
+    """
+    Used in `ArrayGen/t.py` to normalize the expression.
+    It replaces '^' with '**' and adds '*' between numbers and variables.
+
+    Parameters:
+    -----------
+    expr_: str
+        The input mathematical expression as a string.
+
+    Returns:
+    --------
+    str
+    """
+    expr_ = expr_.replace('^', '**')
+    expr_ = re.sub(r'(\d)([a-zA-Z])', r'\1*\2', expr_)
+    return expr_
+
 def get_num(expr: str, var: int = None, type_: str = '') -> Union[Tuple[int, ...], str]:
     """
     Extracts specified number of integers from the given string expression.
