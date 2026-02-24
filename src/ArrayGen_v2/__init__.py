@@ -13,4 +13,4 @@ from .t import *
 from .expr import expr
 
 __all__ = ['Physics', 'Maths', "Graphing",
-           'inb_']
+           'inb_', 'solver']
