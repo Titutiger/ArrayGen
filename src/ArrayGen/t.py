@@ -3,9 +3,9 @@
 import re
 from typing import Optional, Any
 
-from maths import *
-from graphing import *
-from utils import expr, normalize
+from . import Maths
+from .graphing import *
+from .utils import expr, normalize
 
 def syn(expr: str):
 
